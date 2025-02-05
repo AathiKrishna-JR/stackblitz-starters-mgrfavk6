@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,],
   imports: [
-    BrowserModule,
+    BrowserModule,AppComponent
    
   ],
   providers: [],
