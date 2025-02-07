@@ -11,8 +11,8 @@ export interface Contact {
 })
 export class ContactService {
   private contacts: WritableSignal<Contact[]> = signal([
-    { name: 'John Doe', phone: '123-456-7890', email: 'john@example.com' },
-    { name: 'Jane Smith', phone: '987-654-3210', email: 'jane@example.com' }
+    { name: 'Aathi', phone: '1234567890', email: 'Aathi@example.com' },
+    { name: 'Krishna', phone: '9876543210', email: 'Krishna@example.com' }
   ]);
 
   getContacts(): WritableSignal<Contact[]> { // Change return type to WritableSignal
