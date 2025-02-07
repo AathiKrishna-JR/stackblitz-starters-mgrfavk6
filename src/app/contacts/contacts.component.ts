@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { ContactListComponent } from '../contact-list/contact-list.component';
-import { AddContactComponent } from '../add-contact/add-contact.component';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
