@@ -5,7 +5,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-contacts',
-  imports: [ContactListComponent,AddContactComponent],
+  imports: [ContactListComponent],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css'
 })
