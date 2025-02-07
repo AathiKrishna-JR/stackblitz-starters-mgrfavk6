@@ -11,6 +11,7 @@
   button {
     padding: 10px;
     background-color: #007bff;
+    align-self: center;
     color: white;
     border: none;
     border-radius: 5px;
