@@ -12,11 +12,11 @@ import { ContactService } from './contact.service';
 })
 
 export class ContactListComponent {
-  contacts = this.contactService.getContacts(); 
-
   constructor(private contactService: ContactService) {}
 
-  removeContact(index: number) {
+
+  contacts = this.contactService.getContacts(); 
+ removeContact(index: number) {
     this.contactService.deleteContact(index);
   }
 }
