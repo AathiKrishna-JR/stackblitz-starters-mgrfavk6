@@ -1,23 +1,25 @@
-import { Injectable, Signal, signal } from '@angular/core';
+import { Injectable, Signal, WritableSignal, signal } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ContactService {
-  private contacts = signal([
+  private contacts: WritableSignal<{ name: string; phone: string; email: string }[]> = signal([
     { name: 'John Doe', phone: '123-456-7890', email: 'john@example.com' },
     { name: 'Jane Smith', phone: '987-654-3210', email: 'jane@example.com' }
   ]);
 
   getContacts(): Signal<{ name: string; phone: string; email: string }[]> {
-    return this.contacts;
+    return this.contacts.asReadonly(); // Return a read-only signal
   }
 
   addContact(contact: { name: string; phone: string; email: string }) {
-    this.contacts.mutate((contacts) => contacts.push(contact));
+    this.contacts.update((contacts: { name: string; phone: string; email: string }[]) => [...contacts, contact]);
   }
 
   deleteContact(index: number) {
-    this.contacts.mutate((contacts) => contacts.splice(index, 1));
+    this.contacts.update((contacts: { name: string; phone: string; email: string }[]) => 
+      contacts.filter((_, i) => i !== index)
+    );
   }
 }
