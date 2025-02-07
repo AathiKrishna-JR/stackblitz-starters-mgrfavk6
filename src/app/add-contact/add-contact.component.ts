@@ -31,7 +31,7 @@ export class AddContactComponent {
       
       this.contactForm.reset();
 
-      this.router.navigate(['/ ']);
+      this.router.navigate(['../']);
 
     }
   }
