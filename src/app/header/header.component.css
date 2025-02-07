@@ -1,7 +1,7 @@
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space elements properly */
+    justify-content: flex-start; /* Space elements properly */
     width: 100%; /* Ensure full width */
     background-color: #3B6690;
     padding: 1rem;
