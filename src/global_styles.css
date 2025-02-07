@@ -1,16 +1,21 @@
 /* Add application styles & imports to this file! */
-body {
+
+  
+  *{
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #c2d4e6;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    height: 100%;
   }
-  
-  .container {
-    max-width: 600px;
-    width: 100%;
-    padding: 20px;
-  }
-  
+    

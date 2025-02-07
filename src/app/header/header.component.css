@@ -26,13 +26,7 @@ header {
     color: aliceblue;
     }
     
-    p {
-    margin: 0;
-    font-size: 0.8rem;
-    text-wrap: balance;
-    }
-    
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
     header {
     padding: 2rem;
     }
