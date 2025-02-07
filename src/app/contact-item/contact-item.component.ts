@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-contact-item',
   standalone: true,
   templateUrl:'./contact-item.component.html', 
-  styleUrl : './contact-item.component.css'
+  styleUrls : ['./contact-item.component.css',]
 })
 export class ContactItemComponent {
   @Input() contact!: { name: string; phone: string; email: string };
