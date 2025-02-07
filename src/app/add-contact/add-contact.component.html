@@ -1,0 +1,10 @@
+<h2>Add New Contact</h2>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <label>Name:</label>
+      <input formControlName="name" />
+      <label>Phone:</label>
+      <input formControlName="phone" />
+      <label>Email:</label>
+      <input formControlName="email" />
+      <button type="submit" [disabled]="contactForm.invalid">Add Contact</button>
+    </form>
