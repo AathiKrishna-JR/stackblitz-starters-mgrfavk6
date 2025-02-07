@@ -24,6 +24,8 @@ export class AddContactComponent {
   onSubmit() {
     if (this.contactForm.valid) {
       this.contactService.addContact(this.contactForm.value);
+      console.log(this.contactService.getContacts());
+      
       this.contactForm.reset();
     }
   }
