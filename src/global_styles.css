@@ -13,7 +13,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;  /* Change from row to column */
+    align-items: stretch;    /* Allow full-width expansion */
     height: 100%;
   }
-    
+  

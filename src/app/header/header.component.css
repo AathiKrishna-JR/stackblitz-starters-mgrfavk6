@@ -1,10 +1,8 @@
 header {
     display: flex;
-    flex-direction: row; /* Change from column to row */
     align-items: center;
     justify-content: space-between; /* Space elements properly */
-    width: 100%;
-    height: auto;
+    width: 100%; /* Ensure full width */
     background-color: #3B6690;
     padding: 1rem;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
@@ -18,15 +16,7 @@ header {
   h1 {
     font-size: 1.25rem;
     margin: 0;
-    padding: 0;
     color: aliceblue;
-  }
-  
-  /* Ensure body & html take full width */
-  body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
   }
   
   /* Responsive adjustments */
