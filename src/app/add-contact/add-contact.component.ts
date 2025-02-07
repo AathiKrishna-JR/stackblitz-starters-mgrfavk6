@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ContactService } from '../contact-list/contact.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-contact',
@@ -12,6 +13,8 @@ export class AddContactComponent {
 
   contactForm: FormGroup;
   private contactService = inject(ContactService);
+  private router = inject(Router);
+  private activatedRoute = inject(ActivatedRoute);
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -27,6 +30,9 @@ export class AddContactComponent {
       console.log(this.contactService.getContacts());
       
       this.contactForm.reset();
+
+      this.router.navigate(['/ ']);
+
     }
   }
 }

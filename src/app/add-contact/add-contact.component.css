@@ -13,14 +13,17 @@
   form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    gap: 15px;
+    width: 100%; /* Make form responsive */
+    max-width: 500px; /* Increased width */
+    min-height: 400px; /* Added minimum height */
+    padding: 25px; /* More padding */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
     background: #A9BFA8;
   }
+  
   
   
   
