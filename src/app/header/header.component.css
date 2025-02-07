@@ -1,41 +1,46 @@
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Change from column to row */
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between; /* Space elements properly */
     width: 100%;
-    max-width: 50rem;
-    margin: 0 auto 2rem auto;
-    text-align: center;
+    height: auto;
     background-color: #3B6690;
     padding: 1rem;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
-    }
-    
-    img {
+  }
+  
+  img {
     width: 3.5rem;
     object-fit: contain;
-    }
-    
-    h1 {
+  }
+  
+  h1 {
     font-size: 1.25rem;
     margin: 0;
     padding: 0;
     color: aliceblue;
-    }
-    
-  @media (min-width: 768px) {
-    header {
-    padding: 2rem;
-    }
-    
-    img {
-    width: 4.5rem;
-    }
-    
-    h1 {
-    font-size: 1.5rem;
+  }
+  
+  /* Ensure body & html take full width */
+  body, html {
     margin: 0;
     padding: 0;
+    width: 100%;
+  }
+  
+  /* Responsive adjustments */
+  @media (min-width: 768px) {
+    header {
+      padding: 2rem;
     }
+  
+    img {
+      width: 4.5rem;
     }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
