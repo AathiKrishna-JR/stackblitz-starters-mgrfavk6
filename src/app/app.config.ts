@@ -4,8 +4,7 @@ import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
-  { path: ' ', component: AppComponent },
-  { path: 'contacts', component: ContactsComponent}
+  { path: '', component: ContactsComponent}
 ];
 
 export const appConfig: ApplicationConfig = {
