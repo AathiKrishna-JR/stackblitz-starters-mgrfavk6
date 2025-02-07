@@ -13,10 +13,6 @@ export class ContactsComponent {
   private router = inject(Router);
   private activatedRoute = inject(ActivatedRoute);
   onAddTask(){
-    this.router.navigate(['./addContacts'],{
-      relativeTo: this.activatedRoute,
-      onSameUrlNavigation:'reload',
-      queryParamsHandling : 'preserve',
-    })
+    this.router.navigate(['./addContacts']);
   }
 }
