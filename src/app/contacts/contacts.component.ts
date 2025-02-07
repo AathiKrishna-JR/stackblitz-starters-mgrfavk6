@@ -13,6 +13,6 @@ export class ContactsComponent {
   private router = inject(Router);
   private activatedRoute = inject(ActivatedRoute);
   onAddTask(){
-    this.router.navigate(['./addContacts']);
+    this.router.navigate(['/addContacts']);
   }
 }
