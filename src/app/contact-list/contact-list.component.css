@@ -1,12 +1,12 @@
 h2 {
     color: #333;
-    text-align: center;
+    text-align: left; /* Align text to the left */
   }
   
   :host {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-items: flex-start; /* Align content to the left */
     gap: 10px;
     max-width: 400px;
     margin: 0 auto;
