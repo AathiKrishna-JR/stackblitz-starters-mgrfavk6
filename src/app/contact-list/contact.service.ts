@@ -15,13 +15,13 @@ export class ContactService {
     { name: 'Krishna', phone: '9876543210', email: 'Krishna@example.com' }
   ]);
 
-  getContacts(): WritableSignal<Contact[]> { // Change return type to WritableSignal
+  getContacts(): WritableSignal<Contact[]> { 
     return this.contacts;
   }
 
   addContact(contact: Contact) {
     console.log("Before update:", this.contacts());
-    this.contacts.set([...this.contacts(), contact]); // Use .set() to trigger change detection
+    this.contacts.set([...this.contacts(), contact]); 
     console.log("After update:", this.contacts());
   }
 
