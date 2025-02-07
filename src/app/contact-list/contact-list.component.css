@@ -3,7 +3,7 @@ h2 {
     text-align: center;
   }
   
-  .contact-list {
+  :host {
     display: flex;
     flex-direction: column;
     gap: 10px;

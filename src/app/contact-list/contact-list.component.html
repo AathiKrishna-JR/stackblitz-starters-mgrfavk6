@@ -1,5 +1,5 @@
 <h2>Contact List</h2>
-<app-contact-item 
+<app-contact-item class="contact-list"
   *ngFor="let contact of contacts(); let i = index"
   [contact]="contact"
   (delete)="removeContact(i)">
