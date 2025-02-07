@@ -20,8 +20,9 @@ export class ContactService {
   }
 
   addContact(contact: Contact) {
-    this.contacts.update((contacts) => [...contacts, contact]);
+    this.contacts.update((contacts) => [...contacts, { ...contact }]);
   }
+  
 
   deleteContact(index: number) {
     this.contacts.update((contacts) => contacts.filter((_, i) => i !== index));
