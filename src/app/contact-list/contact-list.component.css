@@ -1,0 +1,13 @@
+h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
