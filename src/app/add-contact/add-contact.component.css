@@ -1,10 +1,9 @@
 .container {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center content horizontally */
-    width: 100%;
-    margin-top: 50px; /* Adjust spacing from the top */
-  }
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 50px; 
+}
   
   h2 {
     text-align: center;
@@ -14,10 +13,10 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    width: 100%; /* Make form responsive */
-    max-width: 500px; /* Increased width */
-    min-height: 400px; /* Added minimum height */
-    padding: 25px; /* More padding */
+    width: 100%; 
+    max-width: 500px; 
+    min-height: 400px; 
+    padding: 25px; 
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
