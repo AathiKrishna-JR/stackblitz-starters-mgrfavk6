@@ -21,7 +21,7 @@ export class ContactService {
 
   addContact(contact: Contact) {
     console.log("Before update:", this.contacts());
-     effect(() =>  this.contacts.set([...this.contacts(), contact])); 
+    this.contacts.set([...this.contacts(), contact]); 
     console.log("After update:", this.contacts());
   }
 

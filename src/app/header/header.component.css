@@ -14,17 +14,5 @@ header {
     color: #FAFFC5;
   }
   
-  @media (min-width: 768px) {
-    header {
-      padding: 2rem;
-    }
   
-    img {
-      width: 4.5rem;
-    }
-  
-    h1 {
-      font-size: 1.5rem;
-    }
-  }
   
