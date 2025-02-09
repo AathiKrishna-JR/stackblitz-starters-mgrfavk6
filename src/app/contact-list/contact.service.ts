@@ -1,4 +1,4 @@
-import { Injectable, WritableSignal, effect, signal } from '@angular/core';
+import { Injectable, WritableSignal, signal } from '@angular/core';
 
 export interface Contact {
   name: string;
