@@ -20,14 +20,14 @@ export class ContactService {
   }
 
   addContact(contact: Contact) {
-    console.log("Before update:", this.contacts());
+    // console.log("Before update:", this.contacts());
        this.contacts.set([...this.contacts(), contact]); 
-    console.log("After update:", this.contacts());
+    // console.log("After update:", this.contacts());
   }
 
   deleteContact(index: number) {
-    console.log("Before delete:", this.contacts());
-    this.contacts.set(this.contacts().filter((_, i) => i !== index));
-    console.log("After delete:", this.contacts());
+    // console.log("Before delete:", this.contacts());
+    this.contacts.set(this.contacts().filter((_,i) => i !== index));
+  //   console.log("After delete:", this.contacts());
   }
 }
