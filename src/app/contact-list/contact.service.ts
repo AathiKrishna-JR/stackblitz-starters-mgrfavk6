@@ -1,4 +1,4 @@
-import { Injectable, WritableSignal, signal } from '@angular/core';
+import { Injectable, WritableSignal, effect, signal } from '@angular/core';
 
 export interface Contact {
   name: string;
@@ -21,7 +21,7 @@ export class ContactService {
 
   addContact(contact: Contact) {
     console.log("Before update:", this.contacts());
-    this.contacts.set([...this.contacts(), contact]); 
+       this.contacts.set([...this.contacts(), contact]); 
     console.log("After update:", this.contacts());
   }
 
