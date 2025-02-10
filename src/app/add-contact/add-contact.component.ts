@@ -25,11 +25,9 @@ export class AddContactComponent {
 
   onSubmit() {
     if (this.contactForm.valid) {
-      this.contactService.addContact(this.contactForm.value);
-      console.log(this.contactService.getContacts());
       
+      this.contactService.addContact(this.contactForm.value);
       this.contactForm.reset();
-
       this.router.navigate(['../']);
 
     }
