@@ -14,7 +14,6 @@ export class AddContactComponent {
   contactForm: FormGroup;
   private contactService = inject(ContactService);
   private router = inject(Router);
-  private activatedRoute = inject(ActivatedRoute);
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
